@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Sobre primos em algumas progressões aritméticas</title>
+  <link rel="stylesheet" type="text/css" href="/css/blog.css" /> 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<center>
+<a href="/blog/?lang=br">Voltar</a></br></br>
+<a href="ap-prime-en.html"><img src="/img/flags/en.gif"></img></a>
+<a href="ap-prime-br.html"><img src="/img/flags/br.gif"></img></a>
+</center>
+<header id="title-block-header">
+<h2 class="title">Sobre primos em algumas progressões aritméticas</h1>
+</header>
+<p>Vamos falar um pouco sobre algumas coisas legais envolvendo progressões
+aritméticas com termos primos.</p>
+<p>Primeiro, vamos relembrar algumas coisas e fixar notações:</p>
+<ul>
+<li><p>Uma sequência <span class="math inline">\(a\)</span> é uma função
+<span class="math inline">\(a: \mathbb{N} \to \mathbb{R}\)</span>. E uma subsequência de <span class="math inline">\(a\)</span> é uma restrição do seu domínio a um conjunto infinito <span
+class="math inline">\(\mathbb{N}&#39; \subset
+\mathbb{N}\)</span>.</p></li>
+<li><p>Uma progressão aritmética (PA) é uma sequência <span
+class="math inline">\(a\)</span> tal que <span
+class="math inline">\(a_{n+1} = a_{n}+r, r \in \mathbb{R}\)</span>. Ela também
+pode ser escrita como <span class="math inline">\(a_{n+1}  =
+A+nB, n \ge 0\)</span>, com <span class="math inline">\(A\)</span> sendo <span
+class="math inline">\(a_{1}\)</span> e <span
+class="math inline">\(B\)</span> sendo <span
+class="math inline">\(r\)</span>. No caso, vamos denotar o conjunto de todos
+os valores de <span class="math inline">\(a_{n}\)</span> por <span
+class="math inline">\(\{A+nB\}_{n \ge 0}\)</span></p></li>
+<li><p>Nós também podemos ter sequências finitas se restringirmos o domínio ao
+conjunto finito <span class="math inline">\(I_{n}\)</span>, onde <span
+class="math inline">\(I_{n}=\{k \in \mathbb{N} \mid 1 \le k \le
+n\}\)</span>.</p></li>
+<li><p>Vamos denotar o conjunto de todos os números primos por <span
+class="math inline">\(\mathbb{P}\)</span>.</p></li>
+</ul>
+<p>A partir de agora, vamos considerar PAs com os valores  <span class="math inline">\(A,
+B\)</span> e seus termos em <span
+class="math inline">\(\mathbb{N}\)</span>, já que estaremos falando de
+PAs com termos primos.</p>
+<p>A primeira coisa que podemos notar é que <span
+class="math inline">\(\mathbb{P} \setminus \{2n+1\}_{n \ge 0} =
+\{2\}\)</span>, já que nenhum primo pode ser par, exceto <span
+class="math inline">\(2\)</span>. Então a sequência de todos os primos é
+uma subsequência de <span class="math inline">\(a_{n+1} = 2n+1, n \ge
+0\)</span>.</p>
+<p>Outra coisa legal: se considerarmos <span
+class="math inline">\({an+b}_{n \ge 0}\)</span> com <span
+class="math inline">\(mdc(a, b)&gt;1\)</span>, isso significa que existe
+algum <span class="math inline">\(m\)</span> que divide <span
+class="math inline">\(a\)</span> e <span
+class="math inline">\(b\)</span>, então ele divide <span
+class="math inline">\(an+b\)</span> e portanto se <span
+class="math inline">\(m\)</span> não é primo, <span
+class="math inline">\(an+b\)</span> também não é. Na verdade, a única chance
+de <span class="math inline">\(an+b\)</span> ser primo é quando <span
+class="math inline">\(m\)</span> é primo, então existe no máximo um primo em <span class="math inline">\({an+b}_{n \ge 0}\)</span>.</p>
+<p>Agora você pode estar se perguntando: “Existe alguma PA (não-constante) que
+<em>somente</em> contém primos?” A resposta é não.</p>
+<p>Suponha que tal sequência <span
+class="math inline">\(a\)</span> exista. Então <span class="math inline">\(a_{1} =
+p\)</span> é primo e todo <span class="math inline">\(a_{n+1} =
+a_{1}+(n-1)r = p+(n-1)r\)</span>, pra algum <span class="math inline">\(r
+\in \mathbb{N}\)</span>.<br />
+Então se tormarmos <span class="math inline">\(a_{p+1}\)</span>, temos
+<span class="math inline">\(a_{p+1} = p+(p+1-1)r = p+pr =
+p(1+r)\)</span>, então <span class="math inline">\(a_{1} = p \mid
+a_{p+1}\)</span>. Absurdo, já que <span
+class="math inline">\(a_{p+1} &gt; a_{1}\)</span> e <span
+class="math inline">\(a_{p+1}\)</span> era primo por suposição.</p>
+<p>Agora falando de algo um pouco mais interessante, vamos voltar para o nosso
+conjunto <span
+class="math inline">\(\{2n+1\}_{n \ge 0}\)</span>. Como vimos, ele contém 
+infinitos primos. Vamos testar isso para outras PAs, como <span class="math inline">\(a_{n+1} = 4n+3, n \ge 0\)</span>, onde <span
+class="math inline">\(a_{1}\)</span>, <span
+class="math inline">\(a_{2}\)</span>, e <span
+class="math inline">\(a_{3}\)</span> são exemplos de termos primos.</p>
+<p>Nós começamos supondo que <span class="math inline">\(\{4n+3\}_{n \ge
+0} \bigcap \mathbb{P} = \{p_{i}\}, i \in I_{k}\)</span> pra algum <span
+class="math inline">\(k \in \mathbb{N}\)</span>. Ou seja, nós supomos que o 
+conjunto de primos na nossa sequência é finito.</p>
+<p><strong>Lema 1</strong>: Nós temos que <span
+class="math inline">\((4a+1)(4b+1) = 16ab+4a+4b+1 =\)
+\(4(4ab+a+b)+1\)</span>, então <span
+class="math inline">\((4a+1)(4b+1)\)</span> também é da forma <span
+class="math inline">\(4c+1\)</span> para algum <span
+class="math inline">\(c\)</span>.</p>
+<p>Seja K o produto de todos os <span
+class="math inline">\(p_{i}\)</span>’s no nosso conjunto. Então vamos tomar <span
+class="math inline">\(\lambda = 4K-1 = 4(K-1)+3\)</span>. Já que <span
+class="math inline">\(\lambda&gt;1\)</span>, ele tem uma decomposição única em primos, então <span class="math inline">\(\lambda =
+\prod\limits_{i=1}^{m}q_{i}\)</span>, onde <span
+class="math inline">\(q_{i} \in \mathbb{P}\)</span>, para algum <span
+class="math inline">\(m \in \mathbb{N}\)</span>.</p>
+<p>Já que <span class="math inline">\(\lambda\)</span> é da forma
+<span class="math inline">\(4N+3\)</span>, pelo menos algum <span
+class="math inline">\(q_{j}\)</span> é da forma <span
+class="math inline">\(4N+3\)</span>, pois caso <span
+class="math inline">\(q_{i}\)</span> fosse da forma <span
+class="math inline">\(4N+1, \forall i \in I_{m}\)</span>, <span
+class="math inline">\(\lambda\)</span> também seria da forma <span
+class="math inline">\(4N+1\)</span> (<em>Lema 1</em>). Então esse
+<span class="math inline">\(q_{j} \in \{p_{i}\}\)</span>.</p>
+<p>Então temos que <span class="math inline">\(q_{j} \mid \lambda\)</span> e
+<span class="math inline">\(q_{j} \mid K \implies q_{j} \mid 1\)</span>.
+Absurdo (<span class="math inline">\(q_{j} \neq 1\)</span>). Então não existe <span class="math inline">\(k \in \mathbb{N}\)</span> tal que <span class="math inline">\(\{4n+3\}_{n \ge 0} \bigcap \mathbb{P} =
+\{p_{i}\}, i \in I_{k}\)</span>. Ou seja, <span
+class="math inline">\(\{4n+3\}_{n \ge 0}\)</span> contém infinitos primos.</p>
+<p>Então será que existe um jeito de generalizar isso e checar rapidamente
+se uma PA contém infinitos primos ou não? Existe sim. Meu objetivo não é 
+provar isso rigorosamente, mas só apresentar a ideia do teorema.</p>
+<p>Esse teorema é chamado “<a
+href="https://en.wikipedia.org/wiki/Dirichlet%27s_theorem_on_arithmetic_progressions"><em>Teorema de Dirichlet para progressões aritméticas</em></a>”, e ele diz que se 
+<span class="math inline">\(a\)</span> e <span
+class="math inline">\(b\)</span> são primos entre si, o conjunto <span
+class="math inline">\(\{an+b\}_{n \ge 0}\)</span> tem infinitos primos.
+A prova desse teorema usa conceitos de teoria analítica dos números pra
+chegar nessa conclusão, especialmente com o objetivo de mostrar que a soma
+dos recíprocos dos primos nesse conjunto diverge.</p>
+<p>A ideia disso é, porcamente falando, ligar a divergência de 
+<span class="math inline">\(log\)</span> com a soma dos recíprocos dos primos utilizando a função Zeta de Riemann <span class="math inline">\(\zeta(s) = \prod\limits_{p \in
+\mathbb{P}} \frac{1}{1-p^{-s}}\)</span>.</p>
+<p>Basicamente, nós temos que <span class="math inline">\(log(\zeta(s)) =
+\sum\limits_{p \in \mathbb{P}} -log(1-p^{-s})\) \(= \sum\limits_{p \in
+\mathbb{P}, n \in \mathbb{N}} \frac{p^{-ns}}{n} = \sum\limits_{p \in
+\mathbb{P}} \frac{1}{p^{s}} + O(1)\)</span>, com <span
+class="math inline">\(O(1)\)</span> sendo um termo de ordem 1. E de fato,
+<span class="math inline">\(\lim\limits_{s \to 1^{+}} log(\zeta(s)) =
+\infty\)</span>, o que significa que <span
+class="math inline">\(\mathbb{P}\)</span> é infinito (Teorema de Euclides).</p>
+<p>Dirichlet extende esse resultado com a sua função  “<em><span
+class="math inline">\(L\)</span></em>”, que utiliza um objeto chamado “Caractere de Dirichlet” para restringir a soma dos recíprocos dos primos a uma classe
+de congruência, obtendo <span
+class="math inline">\(\sum\limits_{p \in \mathbb{P} \bigcap \{an+b\}} \frac{1}{p^{s}} +
+O(1)\)</span> de uma função que envolve o <span
+class="math inline">\(log(L(\chi, s))\)</span>, onde <span
+class="math inline">\(\chi\)</span> é o caractere de Dirichlet.</p>
+<p>E daí a ideia final é provar que isso diverge quando <span
+class="math inline">\(s \to 1\)</span>, e então esse conjunto <span
+class="math inline">\(\{an+b\}_{n \ge 0}\)</span> é infinito (<a
+href="https://math.rice.edu/~av15/Files/Dirichlet.pdf">mais sobre isso</a>).</p>
+<p>Como vimos, não existe uma PA com <em>apenas</em> termos primos,
+mas com certeza existem PAs finitas dessa forma, como por exemplo <span
+class="math inline">\(\{6n+5\}_{n \in I_{5}}\)</span> e <span
+class="math inline">\(\{30n+7\}_{n \in I_{6}}\)</span>.</p>
+<p>Em 2004, Ben Green e Terence Tao provaram que na verdade existem
+PAs finitas de tamanho arbitrário somente com termos primos, mesmo que não seja
+possível construir essas PAs somente com o teorema, já que é somente um 
+teorema de existência.</p>
+<p>Atualmente, a maior PA conhecida que tem somente termos primos é <span class="math inline">\(\{155368778·23\#n+605185576317848261\}_{n
+\in I_{27}}\)</span>, onde <span class="math inline">\(k\#\)</span> é o produto de todos os primos menores que ou iguais a <span
+class="math inline">\(k\)</span>. Essa sequência foi encontrada em 2023 pelo projeto 
+de computação distribuída PrimeGrid.</p>
+<p>Explicar a prova desse teorema está fora do meu alcance, mas você pode ler
+um pouco mais sobre ele <a
+href="https://ems.press/journals/emss/articles/12838">aqui</a> se quiser.</p>
+<small>Se quiser comentar esse texto, me mande uma mensagem por e-mail em</br>
+<code>estrela (arroba) riseup (ponto) net</code></small></br>
+<small><i>Editado por último em 21 de agosto de 2024</i></small>
+</body>
+</html>

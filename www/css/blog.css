@@ -1,0 +1,36 @@
+div.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.post div.body {
+    text-align: justify;
+    max-width: 60vw;
+}
+
+div.post div.body p {
+    font-size: 16px;
+}
+
+div.post div.body p:first-of-type::first-letter {
+    float: left;
+    font-size: 80px;
+}
+
+div.post div.code {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+div.post span.date {
+    font-style: italic;
+}
+
+div.index-entry {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>On primes in some arithmetic progressions</title>
+  <link rel="stylesheet" type="text/css" href="/css/blog.css" />
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<center>
+<a href="/blog">Go back</a></br></br>
+<a href="ap-prime-en.html"><img src="/img/flags/en.gif"></img></a>
+<a href="ap-prime-br.html"><img src="/img/flags/br.gif"></img></a>
+</center>
+<header id="title-block-header">
+<h2 class="title">On primes in some arithmetic progressions</h1>
+</header>
+<p>Let’s take a look on some funny stuff about arithmetic progressions
+that envolve prime numbers in general.</p>
+<p>First of all, some recaps and notations:</p>
+<ul>
+<li><p>A sequence <span class="math inline">\(a\)</span> is a function
+<span class="math inline">\(a: \mathbb{N} \to \mathbb{R}\)</span>. And a
+subsequence of <span class="math inline">\(a\)</span> is a restriction
+of its domain to an infinite set <span
+class="math inline">\(\mathbb{N}&#39; \subset
+\mathbb{N}\)</span>.</p></li>
+<li><p>An arithmetic progression (AP) is a sequence <span
+class="math inline">\(a\)</span> such that <span
+class="math inline">\(a_{n+1} = a_{n}+r, r \in \mathbb{R}\)</span>. It
+can also be written as <span class="math inline">\(a_{n+1}  =
+A+nB, n \ge 0\)</span>, with <span class="math inline">\(A\)</span> being <span
+class="math inline">\(a_{1}\)</span> and <span
+class="math inline">\(B\)</span> being <span
+class="math inline">\(r\)</span>. In this case, we will denote the set
+of all values of <span class="math inline">\(a_{n}\)</span> as <span
+class="math inline">\(\{A+nB\}_{n \ge 0}\)</span></p></li>
+<li><p>We can also have finite sequences, if it is restricted to the
+finite set <span class="math inline">\(I_{n}\)</span> where <span
+class="math inline">\(I_{n}=\{k \in \mathbb{N} \mid 1 \le k \le
+n\}\)</span>.</p></li>
+<li><p>Finally, we will denote the set of all prime numbers as <span
+class="math inline">\(\mathbb{P}\)</span>.</p></li>
+</ul>
+<p>From now on, we’ll consider APs with <span class="math inline">\(A,
+B\)</span> and its values in <span
+class="math inline">\(\mathbb{N}\)</span>, since we’re addresing APs
+that have prime values.</p>
+<p>The first thing to note is that <span
+class="math inline">\(\mathbb{P} \setminus \{2n+1\}_{n \ge 0} =
+\{2\}\)</span>, since no prime can be even, except for <span
+class="math inline">\(2\)</span>. So the sequence of all primes is, in
+fact, a subsequence of <span class="math inline">\(a_{n+1} = 2n+1, n \ge
+0\)</span>.</p>
+<p>Another cool thing: if we consider <span
+class="math inline">\({an+b}_{n \ge 0}\)</span> with <span
+class="math inline">\(qcd(a, b)&gt;1\)</span>, this means that there is
+some <span class="math inline">\(m\)</span> that divides <span
+class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span>, so it divides <span
+class="math inline">\(an+b\)</span>, so if <span
+class="math inline">\(m\)</span> is not prime, <span
+class="math inline">\(an+b\)</span> is not also. In fact, the only case
+where <span class="math inline">\(an+b\)</span> is prime is when <span
+class="math inline">\(m\)</span> is prime, so there is one prime at most
+in <span class="math inline">\({an+b}_{n \ge 0}\)</span>.</p>
+<p>At this point you may ask: “Could there be an AP (non-constant) that
+<em>only</em> have primes?” The answer is no.</p>
+<p>Assume that there is such a sequence <span
+class="math inline">\(a\)</span>. So <span class="math inline">\(a_{1} =
+p\)</span> is prime and every <span class="math inline">\(a_{n+1} =
+a_{1}+(n-1)r = p+(n-1)r\)</span>, for some <span class="math inline">\(r
+\in \mathbb{N}\)</span>.<br />
+So if we take <span class="math inline">\(a_{p+1}\)</span>, we’ll get
+<span class="math inline">\(a_{p+1} = p+(p+1-1)r = p+pr =
+p(1+r)\)</span>, so <span class="math inline">\(a_{1} = p \mid
+a_{p+1}\)</span>. Contradiction, since <span
+class="math inline">\(a_{p+1} &gt; a_{1}\)</span> and <span
+class="math inline">\(a_{p+1}\)</span> is supposed to be prime.</p>
+<p>Now moving to something more interesting, let’s go back to our <span
+class="math inline">\(\{2n+1\}_{n \ge 0}\)</span> set. As we saw, it
+contains an infinite amount of primes. Let’s test this for some other
+AP, like <span class="math inline">\(a_{n+1} = 4n+3, n \ge 0\)</span>, where <span
+class="math inline">\(a_{1}\)</span>, <span
+class="math inline">\(a_{2}\)</span>, and <span
+class="math inline">\(a_{3}\)</span> are examples of primes.</p>
+<p>We start by assuming that <span class="math inline">\(\{4n+3\}_{n \ge
+0} \bigcap \mathbb{P} = \{p_{i}\}, i \in I_{k}\)</span> for some <span
+class="math inline">\(k \in \mathbb{N}\)</span>. In other words, we
+assume the set of all prime terms of our sequence to be finite, aiming
+for contradiction.</p>
+<p><strong>Lemma 1</strong>: We have that <span
+class="math inline">\((4a+1)(4b+1) = 16ab+4a+4b+1 =\)
+\(4(4ab+a+b)+1\)</span>, so <span
+class="math inline">\((4a+1)(4b+1)\)</span> has also the form <span
+class="math inline">\(4c+1\)</span> for some <span
+class="math inline">\(c\)</span>.</p>
+<p>Let K be the product of all <span
+class="math inline">\(p_{i}\)</span>’s in our set. So let’s take <span
+class="math inline">\(\lambda = 4K-1 = 4(K-1)+3\)</span>. Since <span
+class="math inline">\(\lambda&gt;1\)</span>, it has an unique prime
+decomposition, so <span class="math inline">\(\lambda =
+\prod\limits_{i=1}^{m}q_{i}\)</span>, where <span
+class="math inline">\(q_{i} \in \mathbb{P}\)</span>, for some <span
+class="math inline">\(m \in \mathbb{N}\)</span>.</p>
+<p>Since <span class="math inline">\(\lambda\)</span> is in the form
+<span class="math inline">\(4N+3\)</span>, some <span
+class="math inline">\(q_{j}\)</span> is in the form <span
+class="math inline">\(4N+3\)</span>, because if <span
+class="math inline">\(q_{i}\)</span> were in the form <span
+class="math inline">\(4N+1, \forall i \in I_{m}\)</span>, then <span
+class="math inline">\(\lambda\)</span> would be in the form <span
+class="math inline">\(4N+1\)</span> too (<em>Lemma 1</em>). So this
+<span class="math inline">\(q_{j} \in \{p_{i}\}\)</span>.</p>
+<p>In fact, <span class="math inline">\(q_{j} \mid \lambda\)</span> and
+<span class="math inline">\(q_{j} \mid K \implies q_{j} \mid 1\)</span>,
+contradiction (<span class="math inline">\(q_{j} \neq 1\)</span>). So
+there is no <span class="math inline">\(k \in \mathbb{N}\)</span> such
+that <span class="math inline">\(\{4n+3\}_{n \ge 0} \bigcap \mathbb{P} =
+\{p_{i}\}, i \in I_{k}\)</span>. In other words, <span
+class="math inline">\(\{4n+3\}_{n \ge 0}\)</span> has infinite
+primes.</p>
+<p>So, is there a way to generalize this fact and verify quickly whether
+an AP contains infinite primes or not? Indeed there is. My goal is not
+to show a formal proof of it, but to just show the theorem’s idea.</p>
+<p>This theorem is called “<a
+href="https://en.wikipedia.org/wiki/Dirichlet%27s_theorem_on_arithmetic_progressions"><em>Dirichlet’s
+theorem on arithmetic progressions</em></a>”, and it states that if
+<span class="math inline">\(a\)</span> and <span
+class="math inline">\(b\)</span> are coprime, the set <span
+class="math inline">\(\{an+b\}_{n \ge 0}\)</span> has infinite primes.
+It uses some Analytic Number Theory to do so, mainly trying to prove that
+the sum of the reciprocals of the primes in this set diverges.</p>
+<p>The idea of this fact is, naively saying, connect the divergence of
+<span class="math inline">\(log\)</span> to that sum using the Riemann
+Zeta function <span class="math inline">\(\zeta(s) = \prod\limits_{p \in
+\mathbb{P}} \frac{1}{1-p^{-s}}\)</span>.</p>
+<p>We basically have that <span class="math inline">\(log(\zeta(s)) =
+\sum\limits_{p \in \mathbb{P}} -log(1-p^{-s})\) \(= \sum\limits_{p \in
+\mathbb{P}, n \in \mathbb{N}} \frac{p^{-ns}}{n} = \sum\limits_{p \in
+\mathbb{P}} \frac{1}{p^{s}} + O(1)\)</span>, with <span
+class="math inline">\(O(1)\)</span> being some order 1 term. And indeed,
+<span class="math inline">\(\lim\limits_{s \to 1^{+}} log(\zeta(s)) =
+\infty\)</span>, which means that <span
+class="math inline">\(\mathbb{P}\)</span> is infinite (Euclid’s
+Theorem).</p>
+<p>Dirichlet extends this result with his “<em><span
+class="math inline">\(L\)</span> function</em>”, which uses an object
+called “Dirichlet’s character” to restrict the sum of prime reciprocals
+we got to some congruence class, obtaining <span
+class="math inline">\(\sum\limits_{p \in \mathbb{P} \bigcap \{an+b\}} \frac{1}{p^{s}} +
+O(1)\)</span> from a function that envolves <span
+class="math inline">\(log(L(\chi, s))\)</span>, where <span
+class="math inline">\(\chi\)</span> is the Dirichlet’s character.</p>
+<p>Then the final idea is to prove that it diverges when <span
+class="math inline">\(s \to 1\)</span>, so that this set <span
+class="math inline">\(\{an+b\}_{n \ge 0}\)</span> is infinite (<a
+href="https://math.rice.edu/~av15/Files/Dirichlet.pdf">see more about
+it</a>).</p>
+<p>As we saw, there is no infinite AP with <em>only</em> prime numbers,
+but of course there are finite ones, like <span
+class="math inline">\(\{6n+5\}_{n \in I_{5}}\)</span> and <span
+class="math inline">\(\{30n+7\}_{n \in I_{6}}\)</span>.</p>
+<p>It was proven by Ben Green and Terence Tao in 2004 that there are in
+fact finite APs containing only prime numbers with an arbitrary amount of
+terms, even though you can’t construct them using this theorem, but only
+prove their existence.</p>
+<p>Currently, the largest finite AP containing only prime numbers known
+is <span class="math inline">\(\{155368778·23\#n+605185576317848261\}_{n
+\in I_{27}}\)</span>, where <span class="math inline">\(k\#\)</span> is
+defined as the product of all primes up to <span
+class="math inline">\(k\)</span>. This sequence was found by the network
+computing project PrimeGrid in 2023.</p>
+<p>Explaining its proof is pretty much out of reach for me, so you can
+read more about it <a
+href="https://ems.press/journals/emss/articles/12838">here</a> if you
+want.</p>
+<small>If you want to comment this post, send your message to me at <code></br>estrela (at) riseup (dot) net</code></small></br>
+<small><i>Last edited on August 21, 2024</i></small>
+</body>
+</html>

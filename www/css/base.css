@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    background: #ffe url(/img/bg.png) top center repeat-x;
+    color: #800000;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 15px;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(136, 0, 0, 0.05);
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-top: 1px rgba(131, 0, 0, 0.3) solid;
+    width: 100%;
+    text-align: center;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 97.3vh;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+a:hover {
+    color: red;
+}
+
+div.buttons {
+    margin-top: 20px;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 5px;
+	padding-bottom: 5px;
+	overflow-wrap: anywhere;
+    gap: 25px;
+}
+
+a.title {
+    font-size: 45px;
+/*  font-style: italic; */
+    text-decoration: none;
+    color: #800;
+}
+
+a.title:hover {
+    text-decoration: underline;
+}
+
+a.title:active {
+    color: red;
+}
+
+span.subtitle {
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+span.footer-text {
+    font-size: 17px;
+    font-style: normal;
+}
+
+.afftitle span {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.smaller-text {
+    font-size: 13px;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.normal-text {
+    font-size: 20px;
+}
+
+.big-text {
+    font-size: 24px;
+}
+
+.bigger-text {
+    font-size: 30px;
+}
+
+.green-text {
+	color: green;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+	background-color: #ffffff;
+	border: 1px solid #000000;
+	padding: 8px;
+}
+
+.address {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+}
+
+div.suggestions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    border: 2px solid rgba(136, 0, 0, 0.8);
+    height: auto;
+    width: 225px;
+    min-width: 30%;
+    background-color: rgba(136, 0, 0, 0.05);
+}
+
+span.card-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+span.card-title a {
+    color: #800;
+}
+
+span.card-title a:hover {
+    color: blue;
+}
+
+div.card-description {
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+div.img img {
+    width: 65%;
+    height: auto;
+    margin-top: 10px;
+}
+
+div.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+div.gallery .pic {
+	display: flex;
+	flex: 1 1 0;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+div.gallery img {
+    border: 2px solid rgba(136, 0, 0, 0.8);
+    height: 325px;
+}
+
+div.gallery img.pic {
+    height: 200px;
+}
+
+div.gallery span {
+	word-wrap: break-word;
+}
+
+hr {
+    display: none;
+}
+
+.choose-lang {
+	margin-top: 10px;
+}
